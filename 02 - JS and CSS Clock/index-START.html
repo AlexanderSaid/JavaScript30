@@ -57,18 +57,31 @@
     }
 
     .hand {
-      width: 50%;
-      height: 6px;
       background: black;
       position: absolute;
       top: 50%;
+      transform: rotate(90deg);
+      transform-origin: 100%;
+      transition: all 0.05s;
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.5, 1);
+    }
+    .second-hand {
+      width: 50%;
+      height: 2px;
+    }
+    .min-hand {
+      width: 40%;
+      left: 10%;
+      height: 4px;
+    }
+    .hour-hand {
+      width: 30%;
+      left: 20%;
+      height: 6px;
     }
 
   </style>
 
-  <script>
-
-
-  </script>
+  <script type="text/javascript" src = "index.js"></script>
 </body>
 </html>
